@@ -107,10 +107,6 @@ def reconstruct_secret(shares, prime=PRIME):
     """
     return lagrange_interpolation(shares, prime)
 
-
-# ============================================================
-# QUICK TEST — Run this file directly to verify
-# ============================================================
 if __name__ == "__main__":
     print("=" * 50)
     print("  FairRide — Shamir Secret Sharing Test")

@@ -83,7 +83,7 @@ You need **5 terminals** open simultaneously.
 
 ### Terminal 1 — Start Node 1
 ```bash
-cd FairRide/server
+cd server
 python node.py 9001
 ```
 

@@ -1,0 +1,25 @@
+# FairRide — Requirements
+# ============================================================
+# This project uses ONLY Python standard library modules.
+# No external packages need to be installed via pip.
+#
+# Python version required: 3.7+
+# ============================================================
+#
+# Standard library modules used (no installation needed):
+#   - socket       (network communication)
+#   - json         (message formatting)
+#   - threading    (concurrent connections)
+#   - hashlib      (SHA-256 hashing of user identity)
+#   - random       (random polynomial coefficients)
+#   - sys          (command line arguments)
+#   - os           (file path handling)
+#   - time         (server startup delay in tests)
+#
+# ============================================================
+# To verify your Python version, run:
+#   python --version
+#
+# To run the project:
+#   PYTHONPATH=client:server:crypto python test_fairride.py
+# ============================================================

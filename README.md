@@ -89,25 +89,25 @@ python node.py 9001
 
 ### Terminal 2 — Start Node 2
 ```bash
-cd FairRide/server
+cd server
 python node.py 9002
 ```
 
 ### Terminal 3 — Start Node 3
 ```bash
-cd FairRide/server
+cd server
 python node.py 9003
 ```
 
 ### Terminal 4 — Start Broker
 ```bash
-cd FairRide/server
+cd server
 python broker.py
 ```
 
 ### Terminal 5 — Run Client
 ```bash
-cd FairRide/client
+cd client
 python client.py
 ```
 

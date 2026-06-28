@@ -76,7 +76,7 @@ def run_tests():
     r = send_booking_request("MEENA_W5678")
     passed = r["status"] == "CONFIRMED"
     results.append(("Test 4: Different user books", passed))
-    print(f"  Status: {r['status']} → {'✅ PASS' if passed else '❌ FAIL'}")
+    print(f"  Status: {r['status']} → {'PASS' if passed else 'FAIL'}")
 
     # ── Summary ───────────────────────────────────────────────
     print("\n" + "=" * 55)
@@ -91,9 +91,9 @@ def run_tests():
 
     print("=" * 55)
     if all_passed:
-        print("  🎉 ALL TESTS PASSED! FairRide is working!")
+        print("   ALL TESTS PASSED! FairRide is working!")
     else:
-        print("  ⚠️  Some tests failed. Check the output above.")
+        print("    Some tests failed. Check the output above.")
     print("=" * 55 + "\n")
 
 

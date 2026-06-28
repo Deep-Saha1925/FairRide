@@ -117,6 +117,12 @@ python client.py
 
 To test everything automatically (no manual terminals needed):
 
+# Set path(POWERSHELL)
+
+```bash
+$env:PYTHONPATH="client;server;crypto"
+```
+
 ```bash
 cd FairRide
 PYTHONPATH=client:server:crypto python test_fairride.py

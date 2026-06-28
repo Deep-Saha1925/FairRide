@@ -20,6 +20,16 @@
 # To verify your Python version, run:
 #   python --version
 #
-# To run the project:
+# HOW TO RUN THE AUTOMATED TEST:
+#
+# Windows PowerShell:
+#   $env:PYTHONPATH="client;server;crypto"
+#   python test_fairride.py
+#
+# Windows Command Prompt:
+#   set PYTHONPATH=client;server;crypto && python test_fairride.py
+#
+# Linux / Mac:
 #   PYTHONPATH=client:server:crypto python test_fairride.py
+#
 # ============================================================

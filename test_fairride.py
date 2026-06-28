@@ -55,21 +55,21 @@ def run_tests():
     r = send_booking_request("PRIYA_W1234")
     passed = r["status"] == "CONFIRMED"
     results.append(("Test 1: First booking", passed))
-    print(f"  Status: {r['status']} → {'✅ PASS' if passed else '❌ FAIL'}")
+    print(f"  Status: {r['status']} → {'PASS' if passed else 'FAIL'}")
 
     # ── Test 2: Second booking (should be CONFIRMED) ─────────
     print("\n[TEST 2] Second booking for PRIYA_W1234...")
     r = send_booking_request("PRIYA_W1234")
     passed = r["status"] == "CONFIRMED"
     results.append(("Test 2: Second booking", passed))
-    print(f"  Status: {r['status']} → {'✅ PASS' if passed else '❌ FAIL'}")
+    print(f"  Status: {r['status']} → {'PASS' if passed else 'FAIL'}")
 
     # ── Test 3: Third booking (should be REJECTED) ───────────
     print("\n[TEST 3] Third booking for PRIYA_W1234 (should be rejected)...")
     r = send_booking_request("PRIYA_W1234")
     passed = r["status"] == "REJECTED"
     results.append(("Test 3: Third booking rejected", passed))
-    print(f"  Status: {r['status']} → {'✅ PASS' if passed else '❌ FAIL'}")
+    print(f"  Status: {r['status']} → {'PASS' if passed else 'FAIL'}")
 
     # ── Test 4: Different user (should be CONFIRMED) ─────────
     print("\n[TEST 4] First booking for different user MEENA_W5678...")

@@ -99,7 +99,7 @@ def start_node(port):
     # Step 4: Start listening (max 5 queued connections)
     server.listen(5)
 
-    print(f"[NODE] Auth Node started on port {port} ✅")
+    print(f"[NODE] Auth Node started on port {port}")
     print(f"[NODE] Waiting for broker connections...\n")
 
     # Step 5: Accept connections forever in a loop

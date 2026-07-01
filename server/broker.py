@@ -111,9 +111,9 @@ def distribute_shares(user_id):
         response = send_to_node(node, message)
         if response and response.get("status") == "OK":
             success_count += 1
-            print(f"  [BROKER] Share {i+1} stored in Node {node['port']} ✅")
+            print(f"  [BROKER] Share {i+1} stored in Node {node['port']} ")
         else:
-            print(f"  [BROKER] Failed to store share in Node {node['port']} ❌")
+            print(f"  [BROKER] Failed to store share in Node {node['port']} ")
 
     return success_count >= K  # Success if at least k nodes got shares
 
@@ -167,10 +167,10 @@ def authenticate_user(user_id):
     expected = user_id_to_secret(user_id)
 
     if reconstructed == expected:
-        print(f"  [BROKER] Authentication SUCCESS ✅")
+        print(f"  [BROKER] Authentication SUCCESS ")
         return True
     else:
-        print(f"  [BROKER] Authentication FAILED ❌")
+        print(f"  [BROKER] Authentication FAILED ")
         return False
 
 
@@ -216,7 +216,7 @@ def handle_booking(user_id):
 
     return {
         "status": "CONFIRMED",
-        "message": f"Booking confirmed! 🎉 You have used {new_count}/2 bookings.",
+        "message": f"Booking confirmed!  You have used {new_count}/2 bookings.",
         "bookings_used": new_count
     }
 

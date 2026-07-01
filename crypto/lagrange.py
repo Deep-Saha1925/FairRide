@@ -78,4 +78,4 @@ if __name__ == "__main__":
     print(f"\nShares used     : {test_shares}")
     print(f"Reconstructed   : {result}")
     print(f"Expected secret : 7")
-    print(f"Test passed     : {result == 7} ✅" if result == 7 else "Test FAILED ❌")
+    print(f"Test passed     : {result == 7} " if result == 7 else "Test FAILED ")

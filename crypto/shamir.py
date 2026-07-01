@@ -124,7 +124,7 @@ if __name__ == "__main__":
     # Reconstruct using only 2 shares
     recovered = reconstruct_secret(shares[:2])
     print(f"Reconstructed secret : {recovered}")
-    print(f"Test passed          : {recovered == SECRET} ✅" if recovered == SECRET else "Test FAILED ❌")
+    print(f"Test passed          : {recovered == SECRET} " if recovered == SECRET else "Test FAILED")
 
     # --- Test 2: Real user token (larger number) ---
     import hashlib
@@ -138,10 +138,10 @@ if __name__ == "__main__":
     recovered2 = reconstruct_secret(shares2[:2])
 
     print(f"Reconstructed token  : {recovered2}")
-    print(f"Test passed          : {recovered2 == token} ✅" if recovered2 == token else "Test FAILED ❌")
+    print(f"Test passed          : {recovered2 == token} " if recovered2 == token else "Test FAILED ")
 
     # --- Test 3: Verify that k-1 shares reveal NOTHING ---
     print(f"\n[Test 3] Using only 1 share (below threshold)...")
     wrong = reconstruct_secret(shares[:1])  # Only 1 share — should be WRONG
     print(f"Result with 1 share  : {wrong}")
-    print(f"Is it the secret?    : {wrong == SECRET} (should be False ✅)")
+    print(f"Is it the secret?    : {wrong == SECRET} (should be False )")

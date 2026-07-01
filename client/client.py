@@ -76,7 +76,7 @@ def print_response(response):
 def run_client():
     """Interactive client — prompts user for ID and books ticket."""
     print("\n" + "=" * 45)
-    print("   Welcome to FairRide 🚌")
+    print("   Welcome to FairRide")
     print("   Free Women's Bus Booking System")
     print("   Powered by Shamir's Secret Sharing")
     print("=" * 45)

@@ -62,13 +62,13 @@ def print_response(response):
 
     print("\n" + "=" * 45)
     if status == "CONFIRMED":
-        print("  ✅  BOOKING CONFIRMED!")
+        print("  BOOKING CONFIRMED!")
         print(f"  {response.get('message')}")
     elif status == "REJECTED":
-        print("  🚫  BOOKING REJECTED!")
+        print("  BOOKING REJECTED!")
         print(f"  Reason: {response.get('reason')}")
     else:
-        print("  ❌  ERROR!")
+        print("  ERROR!")
         print(f"  Reason: {response.get('reason')}")
     print("=" * 45 + "\n")
 
@@ -89,7 +89,7 @@ def run_client():
         choice = input("\nEnter choice (1/2): ").strip()
 
         if choice == "2":
-            print("\nThank you for using FairRide! 👋\n")
+            print("\nThank you for using FairRide!\n")
             break
 
         elif choice == "1":
